@@ -2,7 +2,7 @@
 stringin=`cat <&0`
 model=nmt_model_335_war_out
 #model=nmt_model_cpu_gnmt/best_bleu
-head -31 /NMT/presparktraining/forge.test.or > /tmp/tokenedoracle
+head -31 /NMT/2020train/forge.test.or > /tmp/tokenedoracle
 echo $stringin | /NMT/scripts/tokenizer >> /tmp/tokenedoracle
 currentdir=`pwd`
 cd /NMT/
